@@ -13,6 +13,7 @@
 CMakeCache.txt
 Makefile
 cmake_install.cmake
+CMakeLists.txt
 
 # User data and system files
 *.DS_Store
