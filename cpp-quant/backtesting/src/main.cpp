@@ -10,6 +10,9 @@
 using namespace std;
 
 vector<pair<string, vector<string>>> read_csv(string filename){
+    // initializes a vector of pairs of strings and int vectors {string: column headers, 
+    // vectors: column data}
+
     vector<pair<string, vector<string>>> result;
 
     ifstream myFile(filename);
@@ -46,8 +49,13 @@ vector<pair<string, vector<string>>> read_csv(string filename){
 };
 
 int main(){
+    // gets all the column headers and data
     vector<pair<string, vector<string>>> data = read_csv("../data/AAPL.csv");
+
+    // unpacks the pair
     auto[close, close_vals] = data[1];
+
+    // looks at only close values
     for (auto j = 0; j < 10; ++j){
         cout << close_vals[j] << "\n";
     }
