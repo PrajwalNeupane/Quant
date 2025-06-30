@@ -1,0 +1,19 @@
+# Build folders
+/build/
+/CMakeFiles/
+/cmake-build-*/
+
+# Executables and binaries
+*.out
+*.exe
+*.obj
+*.o
+
+# CMake generated files
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# User data and system files
+*.DS_Store
+*.log
